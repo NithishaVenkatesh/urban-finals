@@ -99,18 +99,18 @@ urbantwin-lumpi/
 
 Due to size, model weights are hosted on **Hugging Face Hub**:
 
-| Model | Size | HF Link |
+| Model | Size | File |
 |---|---|---|
-| PointPillar v1 | 127MB | [Coming Soon] |
-| PointPillar v4 | 127MB | [Coming Soon] |
-| SECOND v5 | 163MB | [Coming Soon] |
-| PointPillar v3 | 127MB | [Coming Soon] |
+| PointPillar v1 | 59MB | [v1_pointpillar_archive_epoch30.pth](https://huggingface.co/Nithiishaa/urbantwin-lumpi-checkpoints/blob/main/v1_pointpillar_archive_epoch30.pth) |
+| PointPillar v4 | 59MB | [v4_pointpillar_epoch30.pth](https://huggingface.co/Nithiishaa/urbantwin-lumpi-checkpoints/blob/main/v4_pointpillar_epoch30.pth) |
+| SECOND v5 | 65MB | [v5_second_epoch38.pth](https://huggingface.co/Nithiishaa/urbantwin-lumpi-checkpoints/blob/main/v5_second_epoch38.pth) |
+| PointPillar v3 | 59MB | [v3_pointpillar_rescaled_epoch30.pth](https://huggingface.co/Nithiishaa/urbantwin-lumpi-checkpoints/blob/main/v3_pointpillar_rescaled_epoch30.pth) |
 
-Total: ~544MB for all 4 model checkpoints.
+Total: ~242MB for all 4 model checkpoints.
 
 To download:
 ```bash
-huggingface-cli download urbantwin/lumpi-checkpoints --local-dir ./checkpoints
+huggingface-cli download Nithiishaa/urbantwin-lumpi-checkpoints --local-dir ./checkpoints
 ```
 
 ## Results
