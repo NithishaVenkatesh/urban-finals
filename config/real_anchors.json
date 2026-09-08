@@ -1,0 +1,97 @@
+{
+ "provenance": [
+  {
+   "measurement": "Measurement0",
+   "frames": 31
+  },
+  {
+   "measurement": "Measurement1",
+   "frames": 31
+  },
+  {
+   "measurement": "Measurement2",
+   "frames": 31
+  },
+  {
+   "measurement": "Measurement3",
+   "frames": 31
+  },
+  {
+   "measurement": "Measurement4",
+   "frames": 31
+  },
+  {
+   "measurement": "Measurement5",
+   "frames": 31
+  },
+  {
+   "measurement": "Measurement6",
+   "frames": 31
+  }
+ ],
+ "anchors": {
+  "Person": {
+   "anchor": [
+    0.8,
+    0.72,
+    1.9
+   ],
+   "bottom": -2.18,
+   "n": 2472
+  },
+  "Car": {
+   "anchor": [
+    4.61,
+    2.01,
+    1.7
+   ],
+   "bottom": -2.23,
+   "n": 4281
+  },
+  "Bicycle": {
+   "anchor": [
+    1.95,
+    0.87,
+    1.87
+   ],
+   "bottom": -2.21,
+   "n": 934
+  },
+  "Motorcycle": {
+   "anchor": [
+    1.92,
+    0.82,
+    1.82
+   ],
+   "bottom": -2.16,
+   "n": 9
+  },
+  "Bus": {
+   "anchor": [
+    6.48,
+    2.24,
+    2.68
+   ],
+   "bottom": -2.17,
+   "n": 39
+  },
+  "Truck": {
+   "anchor": [
+    6.43,
+    2.3,
+    2.57
+   ],
+   "bottom": -2.15,
+   "n": 385
+  },
+  "Van": {
+   "anchor": [
+    3.99,
+    1.84,
+    1.67
+   ],
+   "bottom": -2.16,
+   "n": 126
+  }
+ }
+}
