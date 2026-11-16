@@ -34,6 +34,24 @@ python build_g.py
 # -> submissions/subG/submission.zip
 ```
 
+## Training configs (reconstructed)
+
+`repos/OpenPCDet/tools` is upstream [OpenPCDet](https://github.com/open-mmlab/OpenPCDet) at commit `233f849`, the version recorded in every released checkpoint (`pcdet+0.6.0+233f849`), plus three LUMPI configs in `tools/cfgs/`:
+
+| Config | Models | Data | Epochs |
+|---|---|---|---|
+| `pointpillar_lumpi_v3.yaml` | v3 PointPillar | `lumpi_v3` (rescaled) | 30 |
+| `pointpillar_lumpi.yaml` | v1, v4 PointPillar | `lumpi_v1` | 30 |
+| `second_lumpi.yaml` | v5 SECOND | `lumpi_v1` | 50 (epoch 38 released) |
+
+The original config files were lost with the training machine and were reconstructed:
+
+- **Architecture and voxel geometry:** each released checkpoint loads with `strict=True`.
+- **Schedule:** `adam_onecycle`, LR 0.003, batch 4 and epoch counts were recovered from the optimizer state stored in the checkpoints.
+- **Anchors:** from `config/real_anchors.json` (v3); v1/v4/v5 use synthetic sizes (real / `config/rescale_ratios.json`).
+- **Assumed upstream defaults:** `WEIGHT_DECAY` and the augmentation list. These are not stored in the checkpoints.
+- **Verification:** running the released checkpoints through the original `ens4.py` procedure on the 217 public real frames gives v3 0.1553 and 4-model ensemble 0.1841 mAP@0.5 (R40), against 0.1501 / 0.1684 in the report. Per-class anchor heights may differ slightly from the lost originals.
+
 ## Checkpoints
 
 ```bash
